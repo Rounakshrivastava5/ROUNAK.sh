@@ -13,14 +13,19 @@ export default function ExperienceTimeline() {
         aside={<span className="eyebrow">2022 — Present · 4+ yrs</span>}
       />
 
-      <ol className="relative">
+      <ol className="exp-list relative">
         {experience.map((job, i) => (
           <Reveal
             as="li"
             key={job.company}
             delay={i * 0.04}
-            className="group grid grid-cols-1 border-b border-line last:border-b-0 md:grid-cols-12"
+            className="exp-item group border-b border-line last:border-b-0"
           >
+            <div
+              tabIndex={0}
+              aria-label={`${job.role} at ${job.company}, ${job.start} to ${job.end}`}
+              className="exp-card grid grid-cols-1 outline-none md:grid-cols-12"
+            >
             {/* Date rail */}
             <div className="relative flex items-start gap-3 px-5 pb-2 pt-6 md:col-span-3 md:border-r md:border-line md:py-8 lg:px-8">
               <span className="relative mt-1.5 flex h-2.5 w-2.5 shrink-0">
@@ -75,6 +80,7 @@ export default function ExperienceTimeline() {
                   </ul>
                 </div>
               </div>
+            </div>
             </div>
           </Reveal>
         ))}
