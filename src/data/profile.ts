@@ -14,7 +14,8 @@ export const profile = {
   // Drop your PDF at /public/Rounak_Shrivastava_Resume.pdf
   resume: '/Rounak_Shrivastava_Resume.pdf',
   resumeFileName: 'Rounak_Shrivastava_Resume.pdf',
-  status: 'Available for select opportunities',
+  // Header status chip text. Leave empty ('') to hide the chip.
+  status: '',
   current: {
     role: 'Senior Software Engineer',
     company: 'Reqpedia Technologies Pvt. Ltd.',
@@ -179,6 +180,6 @@ export const experience: Role[] = [
       'Delivered core modules: RBAC, Policy Management, Breach Notification, Data Classification.',
     ],
     kpis: ['40+ features', '10K+ users', '+30% speed', '15+ libraries'],
-    tech: ['Angular', 'React', 'TypeScript', 'Micro-Frontends'],
+    tech: ['Angular', 'React', 'TypeScript', 'Python', 'Golang', 'Micro-Frontends', 'AWS'],
   },
 ]

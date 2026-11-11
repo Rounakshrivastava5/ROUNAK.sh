@@ -16,6 +16,7 @@ const IDS = NAV.map((n) => n.id)
 type Props = { theme: Theme; onToggleTheme: () => void; onContact: () => void }
 
 export function StatusChip({ className = '' }: { className?: string }) {
+  if (!profile.status.trim()) return null
   return (
     <span
       className={`inline-flex items-center gap-2 border border-line bg-surface px-2.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.08em] text-muted ${className}`}
@@ -130,9 +131,11 @@ export default function Header({ theme, onToggleTheme, onContact }: Props) {
                   </a>
                 </li>
               ))}
-              <li className="px-5 py-4">
-                <StatusChip />
-              </li>
+              {profile.status.trim() && (
+                <li className="px-5 py-4">
+                  <StatusChip />
+                </li>
+              )}
             </ul>
           </motion.nav>
         )}

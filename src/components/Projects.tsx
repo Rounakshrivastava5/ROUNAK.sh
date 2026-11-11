@@ -25,7 +25,7 @@ export default function Projects() {
         id="projects-title"
         index="02"
         label="Projects"
-        title="Selected Projects"
+        title="Projects"
         aside={
           <LayoutGroup id="project-filter">
             <div role="group" aria-label="Filter projects" className="flex flex-wrap border border-line">

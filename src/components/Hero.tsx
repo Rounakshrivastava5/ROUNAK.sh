@@ -51,7 +51,7 @@ export default function Hero({ onContact }: { onContact: () => void }) {
                 className="display text-[44px] sm:text-[64px] lg:text-[72px] xl:text-[88px]"
               >
                 Senior Full Stack Engineer building enterprise web apps &amp;{' '}
-                <span className="text-accent dark:outline-text">Gen AI integrations.</span>
+                <span className="text-accent dark:outline-text">integrating Gen AI.</span>
               </motion.h1>
               <motion.p {...rise(0.12)} className="mt-7 max-w-[620px] text-[17px] leading-relaxed text-muted">
                 {profile.bio}
