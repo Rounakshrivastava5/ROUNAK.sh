@@ -24,7 +24,7 @@ export default function ExperienceTimeline() {
             <div
               tabIndex={0}
               aria-label={`${job.role} at ${job.company}, ${job.start} to ${job.end}`}
-              className="exp-card grid grid-cols-1 outline-none md:grid-cols-12"
+              className="focus-card grid grid-cols-1 outline-none md:grid-cols-12"
             >
             {/* Date rail */}
             <div className="relative flex items-start gap-3 px-5 pb-2 pt-6 md:col-span-3 md:border-r md:border-line md:py-8 lg:px-8">

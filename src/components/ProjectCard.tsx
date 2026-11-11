@@ -7,7 +7,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <article
       aria-labelledby={`${project.id}-title`}
-      className="group relative flex h-full flex-col bg-bg transition-colors duration-200 hover:bg-surface"
+      className="focus-card group flex h-full flex-col bg-bg hover:bg-surface has-[:focus-visible]:bg-surface"
     >
       {/* Meta row */}
       <div className="flex items-center justify-between border-b border-line px-5 py-3 lg:px-8">
